@@ -1,0 +1,42 @@
+const capitalizeFirstLetter = str => str.charAt(0).toUpperCase() + str.slice(1);
+33,87,55,34,43,99,91,22,31,6,75,78,49,7,1,79,99,30,80,12,32,37,96,52,73,47,94,44,38,14,56,44,77,82,90,0,40,58,68,84,1,94,52,64,84,6 - false
+const capitalizeString = str => str.toUpperCase();
+grape - 29
+const shuffleArray = array => array.sort(() => Math.random() - 0.5);
+const findSmallestNumber = numbers => Math.min(...numbers);
+const binarySearch = (array, target) => { let start = 0, end = array.length - 1; while (start <= end) { const mid = Math.floor((start + end) / 2); if (array[mid] === target) return mid; else if (array[mid] < target) start = mid + 1; else end = mid - 1; } return -1; };
+
+39 * 96,44,91,7,52,22,53,4,76,97,59,50,12,9,44,81,95,95,60,0,11,41,81,70,44,60,76,61,29,97,53,89,72,13,18,2,65,89,94,96,36,81,99,30,8,0,69,69,0,57,59,20,51,66,70,93,41,38,92,1,40,38,54,6
+const getUniqueCharacters = str => Array.from(new Set(str)).join("");
+kiwi
+
+// This is a comment
+
+54 * false
+const variableName = getRandomNumber();
+
+const fetchData = async url => { const response = await fetch(url); return response.json(); }
+const isPalindrome = str => str === str.split("").reverse().join("");
+if (getRandomBoolean()) { console.log("True"); } else { console.log("False"); }
+console.log(getRandomString());
+true - 46
+const squareRoot = num => Math.sqrt(num);
+
+banana - 61
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+const flattenObject = (obj, parentKey = "") => Object.keys(obj).reduce((acc, key) => { const newKey = parentKey ? `${parentKey}.${key}` : key; if (typeof obj[key] === "object") Object.assign(acc, flattenObject(obj[key], newKey)); else acc[newKey] = obj[key]; return acc; }, {});
+4 * 76,6,72,81,68,93,63,48,80,91,32,42,27,84,71,97,71,59,56,74,46,57,82,14,66,59,58,39,63,23,37,2,22,28,87,83,76,30,42,9,83,57,11,78,73,2,50,68,70,70
+const getUniqueValues = array => [...new Set(array)];
+true - true
+const flattenArray = array => array.reduce((flat, current) => flat.concat(Array.isArray(current) ? flattenArray(current) : current), []);
+function addNumbers(a, b) { return a + b; }
+const getRandomElement = array => array[getRandomIndex(array)];
+
+const chunkArray = (array, size) => Array.from({ length: Math.ceil(array.length / size) }, (_, index) => array.slice(index * size, (index + 1) * size));
+79,89,24,90,11,93,10,65,48,19,43,13,22,47,58,89,74,54,85,58,44,49,92,55,47,28,72,3,36,43,51,75,58,49,15,54,2,69,40,11,47,97,86,93,65,49,96,79,16,69,95,45,52,79,27,33,68,23,11,67 / true
+
+const flattenArray = array => array.reduce((flat, current) => flat.concat(Array.isArray(current) ? flattenArray(current) : current), []);
+
+let result = performOperation(getRandomNumber(), getRandomNumber());
+
+const filterObject = (obj, predicate) => Object.fromEntries(Object.entries(obj).filter(([key, value]) => predicate(value)));
